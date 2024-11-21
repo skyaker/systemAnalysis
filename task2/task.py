@@ -1,7 +1,7 @@
 import csv
 from collections import defaultdict
 
-def process_tree_data(csv_str: str):
+def task(csv_str: str):
   child_map = defaultdict(list)
   parent_map = defaultdict(list)
 
@@ -62,4 +62,4 @@ def process_tree_data(csv_str: str):
 
 if __name__ == '__main__':
   example_input = "1,2\n1,3\n3,4\n3,5\n"
-  print(process_tree_data(example_input))
+  print(task(example_input))
